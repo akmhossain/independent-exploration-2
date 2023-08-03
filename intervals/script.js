@@ -3,3 +3,10 @@ let time = 0;
 // reference to the <span> containing the number
 let counterElement = document.getElementById("time");
 
+setInterval(timeAdder, 1000)
+
+function timeAdder() {
+    time++;
+    counterElement.innerHTML = time;
+}
+
